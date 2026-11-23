@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "pvpvisuals",
+  "version": "${version}",
+  "name": "My PvP Visuals",
+  "description": "Custom PvP Visuals",
+  "authors": ["Player"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.pvpvisuals.PvpVisualsClient"
+    ]
+  },
+  "mixins": [
+    "pvpvisuals.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
